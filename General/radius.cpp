@@ -3,19 +3,19 @@
 #include <unordered_map>
 #include <vector>
 
-using PostId = std::string;
-using UserId = std::string;
+using PostID = std::string;
+using UserID = std::string;
 
 struct Post {
-    PostId id;                         // Unique ID
+    PostID id;                         // Unique ID
     std::string contents;              // Contents of the post
-    std::vector<UserId> likes;         // Vector of User IDs
+    std::vector<UserID> likes;         // Vector of User IDs
     int64_t timestamp;                 // Timestamp of when the post was made.
 };
 
 struct User {
-    UserId id;                         // Unique ID
-    std::vector<PostId> feed;          // Array of Post IDs
+    UserID id;                         // Unique ID
+    std::vector<PostID> feed;          // Array of Post IDs
 };
 
 std::vector<Post *> getLikedPosts(const User &user, const std::vector<Post> &posts) {

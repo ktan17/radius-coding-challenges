@@ -17,7 +17,7 @@ You've been given a very bare-bones node.js/Express server. Your task is to impl
 - You must use the function `getOrganization` (which simulates a database call) to retrieve the organization data.
 
   - `getOrganization` takes in a single string parameter, `id`.
-  - It returns a [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) that resolves to an `Organization` object if an organization with the specified ID **exists**, and rejects otherwise.
+  - It returns a [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) that resolves to an `Organization` object if an organization with the specified ID **exists**, and rejects with an Error otherwise.
   - `Organization` objects contain two fields, `name` and `memberCount`.
 
 - If the call to `getOrganization` succeeds, the server should send a JSON response back to the client in the following format:

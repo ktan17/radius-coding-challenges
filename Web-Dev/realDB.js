@@ -1,4 +1,5 @@
 // Do not modify the contents of this file.
+const util = require("util");
 
 class Organization {
     constructor(name, memberCount) {
@@ -10,7 +11,7 @@ class Organization {
 // lol
 const organizations = {
     "12" : new Organization("ACM", 500),
-    "115" : new Organization("Bruin Entrpreneurs", 200),
+    "115" : new Organization("Bruin Entrepreneurs", 200),
     "37" : new Organization("CSSA", 150),
     "26" : new Organization("ACA", 1000),
     "25" : new Organization("KASA", 900),
@@ -21,17 +22,17 @@ const organizations = {
     "99" : new Organization("Daily Bruin", 300)
 }
 
-function getOrganization(id) {
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            const organization = organizations[id];
-            if (organization != undefined) {
-                resolve(organization)
-            } else {
-                reject();
-            }
-        }, Math.floor(Math.random() * 2000) + 1000);
-    });
+const timeout = util.promisify(setTimeout);
+
+async function getOrganization(id) {
+    await timeout(Math.floor(Math.random() * 2000) + 1000);
+
+    const organization = organizations[id];
+    if (organization != undefined) {
+        return organization;
+    } else {
+        return new Error("Organization not found");
+    }
 }
 
 module.exports = { getOrganization };

@@ -84,8 +84,8 @@ Write a function named `getFeeds()` that:
 - Swift
   - You **may not** include any additional libraries or Pods.
 - JavaScript
+  - You **may** assume that the code will be run in the latest version of node.js.
   - You **may not** include any additional libraries or packages.
-  - You **may** use APIs and syntax available in node.js.
 
 ## Submission
 
