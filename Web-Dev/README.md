@@ -50,4 +50,4 @@ You've been given a very bare-bones node.js/Express server. Your task is to impl
 
 ##Submission
 
-If you only modified the **server.js** file, just submit that. Otherwise, if you created any extra files, zip them along with **server.js** and name the zip file "\<YourName\>WebDev.zip".
+If you only modified the **server.js** file, just submit that. Otherwise, if you created any extra files, zip them along with **server.js** and name the zip file "\<YourName\>-WebDev.zip".

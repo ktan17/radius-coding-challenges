@@ -35,7 +35,7 @@ Finally, Professor Birch has a few more instructions for you:
 
 ## Submission
 
-To complete the project, create a .zip file named "\<YourName\>.zip" of the following files:
+To complete the project, create a .zip file named "\<YourName\>-ios.zip" of the following files:
 
 - **PokemonCollectionViewCell.swift**
 - **PokemonViewController.swift**
