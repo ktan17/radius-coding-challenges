@@ -21,5 +21,5 @@ function getLikedPosts(user, posts) {
 
 function getFeeds(users, posts) {
     // TODO
-    return {};
+    return new Map();
 }
