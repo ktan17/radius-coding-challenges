@@ -1,27 +1,29 @@
+#include <cstdint>
 #include <string>
+#include <unordered_map>
 #include <vector>
-#include <map>
 
-class Post {
-public:
-    std::string id;                    // Unique ID
+using PostId = std::string;
+using UserId = std::string;
+
+struct Post {
+    PostId id;                         // Unique ID
     std::string contents;              // Contents of the post
-    std::vector<std::string> likes;    // Vector of User IDs
-    unsigned timestamp;                // Timestamp of when the post was made.
+    std::vector<UserId> likes;         // Vector of User IDs
+    int64_t timestamp;                 // Timestamp of when the post was made.
 };
 
-class User {
-public:
-    std::string id;                    // Unique UID
-    std::vector<std::string> feed;     // Array of Post IDs
+struct User {
+    UserId id;                         // Unique ID
+    std::vector<PostId> feed;          // Array of Post IDs
 };
 
-std::vector<Post *> getLikedPosts(User &user, std::vector<Post *> posts) {
+std::vector<Post *> getLikedPosts(const User &user, const std::vector<Post> &posts) {
     // TODO
     return std::vector<Post *>();
 }
 
-std::map<std::string, std::vector<Post *>> getFeeds(std::vector<User *> users, std::vector<Post *> posts) {
+std::unordered_map<UserId, std::vector<Post *>> getFeeds(const std::vector<User> &users, const std::vector<Post> &posts) {
     // TODO
-    return std::map<std::string, std::vector<Post *>>();
+    return std::unordered_map<UserId, std::vector<Post *>>();
 }
