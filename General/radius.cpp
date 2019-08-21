@@ -23,7 +23,7 @@ std::vector<Post *> getLikedPosts(const User &user, const std::vector<Post> &pos
     return std::vector<Post *>();
 }
 
-std::unordered_map<UserId, std::vector<Post *>> getFeeds(const std::vector<User> &users, const std::vector<Post> &posts) {
+std::unordered_map<UserID, std::vector<Post *>> getFeeds(const std::vector<User> &users, const std::vector<Post> &posts) {
     // TODO
-    return std::unordered_map<UserId, std::vector<Post *>>();
+    return std::unordered_map<UserID, std::vector<Post *>>();
 }
