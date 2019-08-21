@@ -1,13 +1,11 @@
 // Do not modify these lines.
 const express = require("express");
-const { json } = require("body-parser");
 const { getOrganization } = require("./realDB");
 
 const app = express();
-app.use(json());
 // End
 
-app.get("/organizations", async (req, res) => {
+app.get("/organizations/:id", async (req, res) => {
     // TODO
 });
 
