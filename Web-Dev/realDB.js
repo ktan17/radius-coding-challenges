@@ -19,6 +19,7 @@ const organizations = {
     "8" : new Organization("DevX", 250),
     "17" : new Organization("Creative Labs", 125),
     "2" : new Organization("Bruin Consulting", 400),
+    "35" : new Organization("Ascend", 100),
     "99" : new Organization("Daily Bruin", 300)
 }
 
