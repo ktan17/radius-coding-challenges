@@ -18,12 +18,14 @@ struct User {
     std::vector<PostID> feed;          // Array of Post IDs
 };
 
-std::vector<Post *> getLikedPosts(const User &user, const std::vector<Post> &posts) {
+std::vector<const Post *> getLikedPosts(const User &user,
+                                        const std::vector<Post> &posts) {
     // TODO
-    return std::vector<Post *>();
+    return std::vector<const Post *>();
 }
 
-std::unordered_map<UserID, std::vector<Post *>> getFeeds(const std::vector<User> &users, const std::vector<Post> &posts) {
+std::unordered_map<UserID, std::vector<const Post *>>
+getFeeds(const std::vector<User> &users, const std::vector<Post> &posts) {
     // TODO
-    return std::unordered_map<UserID, std::vector<Post *>>();
+    return std::unordered_map<UserID, std::vector<const Post *>>();
 }
