@@ -22,7 +22,7 @@ A Post object encapsulates data about a single post that would appear on the fee
   - A **list of Strings** containing all of the IDs of the Users (explained below) that have liked this post
     - **There are no guarantees made on the order of these elements**.
 - `timestamp`
-  - An **unsigned integer** representing the time the post was made. For example, the number of seconds that have passed since the 2019 New Year when the post was made.
+  - A **64-bit integer** representing the time the post was made. For example, the number of seconds that have passed since the 2019 New Year when the post was made.
 
 #### User
 
