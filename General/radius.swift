@@ -17,7 +17,7 @@ func getLikedPosts(for user: User, posts: [Post]) -> [Post] {
     return []
 }
 
-func getFeeds(for users: [User], posts: [Post]) -> [String : Post] {
+func getFeeds(for users: [User], posts: [Post]) -> [String : [Post]] {
     // TODO
     return [:]
 }
